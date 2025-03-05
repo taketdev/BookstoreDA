@@ -2,6 +2,11 @@
     margin: 0;
     scroll-behavior: smooth;
 }
+body{
+    background-color: #DAD7CD;
+}
+
+/* Header */
 header{
     display: flex;
     justify-content: space-between;
@@ -33,4 +38,106 @@ header img{
 .headerTextBookStore{
     color: #FFFFFF;
     font-weight: bold;
+}
+
+/* Book Section */
+.bookSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+.booksCard{
+    padding-top: 25px;
+    width: 600px;
+    height: 750px;
+    margin: 20px auto;
+    box-shadow: 
+    inset 0px 5px 10px rgba(0, 0, 0, 0.3), /* Innerer Schatten */
+    8px 4px 10px rgba(0, 0, 0, 0.2); /* Äußerer Schatten */
+    background-color: rgba(127, 143, 109, 0.5);
+    border-radius: 10px;
+    position: relative;
+}
+.bookTitle{
+    display: flex;
+    justify-content: center;
+}
+.seperator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 1px;
+    width: 500px;
+    margin: 0 auto;
+}
+.bookImg{
+    display: flex;
+    width: 150px;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+.priceLikeContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 75px;
+}
+.bookPrice{
+    display: flex;
+    text-align: center;
+    font-size: 32px;
+}
+.likeContainer{
+    width: 35px;
+}
+.none_liked{
+    display: none;
+}
+.liked{
+    display: none;
+}
+.bookInfo{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding: 25px 75px;
+    font-size: 20px;
+}
+.commentSection{
+    max-height: 250px;
+    overflow-y: auto;
+}
+.comment{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-left: 75px;
+    font-size: 15px;
+}
+.commentInput{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 75px;
+    position: absolute;
+    bottom: 0;
+}
+.commentInput input{
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 415px;
+    height: 32px;
+
+}
+.commentInput button{
+    background: none;
+    background-color: transparent;
+    border: none;
+}
+.sendImg{
+    width: 36px;
 }
