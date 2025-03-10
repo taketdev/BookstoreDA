@@ -27,37 +27,31 @@
             <div class="seperator"></div> <!-- Seperator -->
             <div class="priceLikeContainer"> <!-- Price and Like Container -->
                 <div class="bookPrice"><p>19,99€</p></div>
-                    <div class="like">
-                        <img class="likeContainer none_liked" src="./assets/icons/heart.png" alt="heart">
-                        <img class="likeContainer liked" src="./assets/icons/heart_filled.png" alt="heart_filled">
-                        <p>1250</p>
-                    </div>
+                <div class="like">
+                    <img class="likeContainer ${book.liked ? '' : 'none_liked'}" 
+                         src="./assets/icons/heart.png" 
+                         alt="heart">
+                    <img class="likeContainer ${book.liked ? 'liked' : ''}" 
+                         src="./assets/icons/heart_filled.png" 
+                         alt="heart_filled">
+                    <p>${book.likes}</p>
+                  </div>
             </div>
             <div class="bookInfo"> <!-- Book information -->
-                <p>Author:</p>
-                <p>Erscheinungsdatum:</p>
-                <p>Gerne:</p>
+                    <span>Author: <span class="author"></span></span>
+                    <span>Erscheinungsdatum: <span class="publishedYear"></span></span>
+                    <span>Gerne: <span class="genre"></span></span>
             </div>
             <div class="seperator"></div> <!-- Seperator -->
             <div class="commentSection"> <!-- Comment Section -->
                 <div class="comment">
-                    <p>Name: Max Mustermann</p>
-                    <p>Kommentar: Ich fand das Buch sehr gut!</p>
-                </div>
-
-                <div class="comment">
-                    <p>Name: Max Mustermann</p>
-                    <p>Kommentar: Ich fand das Buch sehr gut!</p>
-                </div>
-
-                <div class="comment">
-                    <p>Name: Max Mustermann</p>
+                    <p>[Max Mustermann]</p>
                     <p>Kommentar: Ich fand das Buch sehr gut!</p>
                 </div>
 
                 <div class="commentInput"> <!-- Comment Input -->
-                    <input type="text" placeholder="Kommentar schreiben">
-                    <button>
+                    <input type="text" id="commentInput-${index}" placeholder="Kommentar schreiben">
+                    <button onclick="addComment(${index})">
                         <img class="sendImg" src="./assets/icons/send.png" alt="">
                     </button>
                 </div>

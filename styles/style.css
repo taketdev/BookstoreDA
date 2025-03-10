@@ -88,6 +88,7 @@ header img{
 }
 .like{
     text-align: center;
+    cursor: pointer;
 }
 .bookPrice{
     display: flex;
@@ -104,11 +105,12 @@ header img{
     display: none;
 }
 .bookInfo{
-    display: flex;
-    text-align: left;
-    flex-direction: column;
     padding: 25px 75px;
     font-size: 18px;
+}
+.bookInfo span{
+    display: flex;
+    justify-content: space-between;
 }
 .commentSection{
     max-height: 250px;
@@ -147,4 +149,5 @@ header img{
 }
 .sendImg{
     width: 30px;
+    cursor: pointer;
 }
