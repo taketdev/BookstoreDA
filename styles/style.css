@@ -6,7 +6,9 @@
 body{
     background-color: #DAD7CD;
 }
-
+body::-webkit-scrollbar-track {
+    background: none;  
+  }
 /* Header */
 header{
     display: flex;

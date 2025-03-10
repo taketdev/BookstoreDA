@@ -5,7 +5,7 @@ if (localStorage.getItem("books")) {
 
 // render books function
 function renderBook() {
-  const container = document.querySelector('.bookSection');
+  const container = document.getElementById('bookTemplate');
   container.innerHTML = '';
   
   books.forEach((book, index) => {
